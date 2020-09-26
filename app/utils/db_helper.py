@@ -26,7 +26,11 @@ def fetch_all(sql, args):
     :return:
     '''
     conn = Config.POOL.connection()
+    # cursor = conn.cursor()  # ((1, 'thanlon', 'thanlon'), (2, 'kiku', 'kiku'))
     cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+    """
+    [{'id': 1, 'user': 'thanlon', 'nickname': 'thanlon'}, {'id': 2, 'user': 'kiku', 'nickname': 'kiku'}]
+    """
     cursor.execute(sql, args)
     result = cursor.fetchall()
     cursor.close()

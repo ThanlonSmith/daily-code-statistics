@@ -9,9 +9,17 @@ def index():
     return redirect(url_for('home.user_list', page=1))
 
 
-@home.route('/user/list/<int:page>/')
+@home.route('/user/list/<int:page>/', methods=["GET"])
 def user_list(page=None):
-    return render_template('home/index.html')
+    if request.method == 'GET':
+        # ret = db_helper.fetch_all('select id,user ,nickname from userinfo', ())
+        data_list = db_helper.fetch_all('select id,user ,nickname from userinfo', None)
+        """
+         print(data)
+        [{'id': 1, 'user': 'thanlon', 'nickname': 'thanlon'}, {'id': 2, 'user': 'kiku', 'nickname': 'kiku'}]
+        """
+
+    return render_template('home/index.html', data_list=data_list)
 
 
 @home.route('/user/login/', methods=['get', 'post'])

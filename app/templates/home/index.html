@@ -21,7 +21,9 @@
 {% endblock %}
 {% block content %}
     <div class="panel panel-default">
-        <div class="panel-heading">{{ title|safe }}</div>
+        {#        <div class="panel-heading">{{ title|safe }}</div>#}
+        {#        <div class="panel-heading"><a href="{{ url_for('home.user_list',page=1) }}">用户列表</a></div>#}
+        <div class="panel-heading">用户列表</div>
         <div class="panel-body">
             <table class="table table-bordered">
                 <thead>
@@ -29,26 +31,19 @@
                     <th>编号</th>
                     <th>用户名</th>
                     <th>昵称</th>
-                    <th>代码上传记录</th>
+                    <th>代码提交记录</th>
                 </tr>
                 </thead>
-                {#        {% for v in page_data.items %}#}
-                {#            <tr>#}
-                {#                <td style="vertical-align: middle">{{ v.title }}</td>#}
-                {#                <td style="vertical-align: middle">{{ cate_id_name[v.cate_id-1][1] }}</td>#}
-                {#                <td style="vertical-align: middle">#}
-                {#                    <!--这里可以使用JS显示上传的图像<img data-src="holder.js/75x40">-->#}
-                {#                    <img src="/static/images/uploads/{{ v.logo }}" style="width: 75px;height: 40px;">#}
-                {#                </td>#}
-                {#                <td style="vertical-align: middle">{{ session['user'] }}</td>#}
-                {#                <td style="vertical-align: middle">{{ v.addtime }}</td>#}
-                {#                <td style="vertical-align: middle">#}
-                {#                    <a href="{{ url_for('article_edit',id=v.id) }}" class="btn btn-sm btn-warning">编辑</a>#}
-                {#                    <a href="/article/del/{{ v.id }}" onclick="return confirm('确认删除该篇新闻《{{ v.title }}》？')"#}
-                {#                       class="btn btn-sm btn-danger">删除</a>#}
-                {#                </td>#}
-                {#            </tr>#}
-                {#        {% endfor %}#}
+                {% for row in data_list %}
+                    <tr>
+                        <td style="vertical-align: middle">{{ row.id }}</td>
+                        <td style="vertical-align: middle">{{ row.user }}</td>
+                        <td style="vertical-align: middle">{{ row.nickname }}</td>
+                        <td class="text-center">
+                            <a href="{{ url_for('home.commit_record',id=row['id']) }}">查看</a>
+                        </td>
+                    </tr>
+                {% endfor %}
             </table>
         </div>
     </div>
