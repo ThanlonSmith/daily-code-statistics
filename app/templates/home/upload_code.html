@@ -1,0 +1,44 @@
+{% extends "home/layout.html" %}
+{% block css %}
+    <style>
+        .table td, .table th {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+            z-index: 2;
+            color: #fff;
+            background-color: #d8534f;
+            border-color: #d8534f;
+        }
+
+        .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+            background-color: #d8534f;
+            border-color: #d8534f;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="panel-body">
+                <form action="" method="post" enctype='multipart/form-data'>
+                    <div class="form-group">
+                        <input type="file" name="code" class="form-control" style="height: 40px">
+                        <div style="color: red;font-weight: bold">{{ msg }}</div>
+                    </div>
+                    <input type="submit" value="上传" class="btn"
+                           style="background-color: #d8534f;color: white;font-weight: bold">
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block js %}
+    <script>
+        $(document).ready(function () {
+            $("#m2").addClass("active");
+        });
+    </script>
+{% endblock %}

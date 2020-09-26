@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+    <title>每日代码统计系统</title>
+    <style>
+        .panel-danger > .panel-heading {
+            color: #ffffff;
+            background-color: #d9534f;
+            border-color: #d43f3a;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-light" style="background-color: #d8534f;">
+    <div class="container">
+        <a class="navbar-brand" style="font-weight: bold;color: white" href="{{ url_for('home.index') }}">每日代码统计系统</a>
+        {% if not session.get('user') %}
+            <a class="btn btn-primary navbar-btn pull-right"
+               style="font-weight:bold;background-color:#d8534f;border-color: white "
+               href="{{ url_for('home.user_login') }}">
+                <span class="glyphicon glyphicon-log-out"></span>
+                登录
+            </a>
+        {% else %}
+            <a class="btn btn-primary navbar-btn pull-right"
+               style="font-weight:bold;background-color:#d8534f;border-color: white "
+               href="{{ url_for('home.user_logout') }}"
+               onclick="return confirm('确认退出登录？')">
+                <span class="glyphicon glyphicon-log-out"></span>
+                退出
+            </a>
+            <span class="btn btn-primary navbar-btn pull-right"
+                  style="font-weight:bold;background-color:#d8534f;border-color: white;margin-right: 8px">
+                <span class="glyphicon glyphicon-user"></span>
+                {{ session.get('user',None) }}
+            </span>
+        {% endif %}
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" style="padding: 0">
+            {% for msg in get_flashed_messages(category_filter=['ok']) %}
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <strong>{{ msg }}</strong>
+                </div>
+            {% endfor %}
+            {% for msg in get_flashed_messages(category_filter=['error']) %}
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <strong>{{ msg }}</strong>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="row" style="margin-top:20px">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="panel panel-danger">
+                    <div class="panel-heading" style="font-size: 18px"><span class="glyphicon glyphicon-log-in"></span>&nbsp;登录
+                    </div>
+                    <div class="panel-body">
+                        <form method="POST" action="">
+                            <div class="form-group">
+                                <label>用户名</label>
+                                <input type="text" name="user" class="form-control" id="" placeholder="请输入用户名"
+                                       required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>密码</label>
+                                <input type="password" name="pwd" class="form-control" placeholder="请输入密码"
+                                       required="required">
+                                <div style="color:red">{{ error }}</div>
+                            </div>
+                            <button type="submit" class="btn btn-block btn-danger">登录</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/bootstrap.js') }}"></script>
+{% block js %}{% endblock %}
+</body>
+</html>
