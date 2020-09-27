@@ -12,14 +12,22 @@ def index():
 @home.route('/user/list/<int:page>/', methods=["GET"])
 def user_list(page=None):
     if request.method == 'GET':
+        per_page = 1  # 每页显示多少条
         # ret = db_helper.fetch_all('select id,user ,nickname from userinfo', ())
-        data_list = db_helper.fetch_all('select id,user ,nickname from userinfo', None)
+        data_list = db_helper.fetch_all('select id,user ,nickname from userinfo limit %s,%s ',
+                                        ((page - 1 * per_page), per_page))
         """
-         print(data)
+         print(data_list)
         [{'id': 1, 'user': 'thanlon', 'nickname': 'thanlon'}, {'id': 2, 'user': 'kiku', 'nickname': 'kiku'}]
         """
+        data = db_helper.fetch_all('select id,user ,nickname from userinfo', None)
+        sum_count = len(data)  # 总记录数
+        if sum_count % per_page == 0:
+            page_num_count = sum_count // 1
+        else:
+            page_num_count = sum_count // 1 + 1
 
-    return render_template('home/index.html', data_list=data_list)
+    return render_template('home/index.html', data_list=data_list, page_num_count=page_num_count, page=page)
 
 
 @home.route('/user/login/', methods=['get', 'post'])

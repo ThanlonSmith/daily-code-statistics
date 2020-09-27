@@ -47,6 +47,49 @@
             </table>
         </div>
     </div>
+    <!-- 分页-->
+    <nav aria-label="Page navigation" class="text-center">
+        <ul class="pagination">
+            <!--首页-->
+            <li>
+                <a href="{{ url_for('home.user_list',page=1) }}" aria-label="Previous">
+                    <span aria-hidden="true">首页</span>
+                </a>
+            </li>
+            <!--遍历页码-->
+            {% for i in range(1,page_num_count+1) %}
+                <!--如果当前页码与遍历的页码相等则高亮显示-->
+                {% if page==i %}
+                    <li class="active"><a href="{{ url_for('home.user_list',page=i) }}">{{ i }}</a></li>
+                {% else %}
+                    <li><a href="{{ url_for('home.user_list',page=i) }}">{{ i }}</a></li>
+                {% endif %}
+            {% endfor %}
+            <!--尾页-->
+            <li>
+                <a href="{{ url_for('home.user_list',page=page_num_count) }}" aria-label="Previous">
+                    <span aria-hidden="true">尾页</span>
+                </a>
+            </li>
+
+            {#            <li>#}
+            {#                <a href="#" aria-label="Previous">#}
+            {#                    <span aria-hidden="true">&laquo;</span>#}
+            {#                </a>#}
+            {#            </li>#}
+            {#            <li class="active"><a href="#">1</a></li>#}
+            {#            <li><a href="#">2</a></li>#}
+            {#            <li><a href="#">3</a></li>#}
+            {#            <li><a href="#">4</a></li>#}
+            {#            <li><a href="#">5</a></li>#}
+            {#            <li>#}
+            {#                <a href="#" aria-label="Next">#}
+            {#                    <span aria-hidden="true">&raquo;</span>#}
+            {#                </a>#}
+            {#            </li>#}
+        </ul>
+    </nav>
+    <!--分页-->
     {#    {{ pg.page(page_data,'article_list') }}#}
 {% endblock %}
 {% block js %}
