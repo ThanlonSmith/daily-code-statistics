@@ -25,6 +25,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05b929af-573c-43a4-b2ea-1db57dbf6370" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dataSources/479d42e7-b372-4138-9074-813315013c31.xml" afterDir="false" />
@@ -36,6 +37,18 @@
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/home/views/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/views/code.py" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/daily-code-statistics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/daily-code-statistics.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/views/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/views/code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/views/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/views/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/home/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/home/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/home/layout.html" afterDir="false" />
+>>>>>>> 4b605c14333b82a1e9876589dc185ce8864434fc
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +65,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -59,6 +73,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="CSV-Groovy.csv.groovy" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/db" />
+=======
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> 4b605c14333b82a1e9876589dc185ce8864434fc
   </component>
   <component name="RunManager" selected="Flask server.Flask (manage.py)">
     <configuration name="daily-code-statistics" type="PythonConfigurationType" factoryName="Python">
@@ -113,7 +133,11 @@
       <option name="presentableId" value="Default" />
       <updated>1601150305595</updated>
       <workItem from="1601150306751" duration="1230000" />
+<<<<<<< HEAD
       <workItem from="1601179498241" duration="7847000" />
+=======
+      <workItem from="1601179498241" duration="3093000" />
+>>>>>>> 4b605c14333b82a1e9876589dc185ce8864434fc
     </task>
     <servers />
   </component>
@@ -133,6 +157,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="1226" y="320" width="800" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601185550829">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
@@ -169,5 +194,31 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/daily_code_statistics$daily_code_statistics.coverage" NAME="daily-code-statistics Coverage Results" MODIFIED="1601150312531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/daily_code_statistics$Flask__manage_py_.coverage" NAME="Flask (manage.py) Coverage Results" MODIFIED="1601185616232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+=======
+    <state x="738" y="392" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601150356628">
+      <screen x="0" y="28" width="2560" height="1412" />
+    </state>
+    <state x="738" y="392" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.2560.1412@0.28.2560.1412" timestamp="1601150356628" />
+    <state width="2506" height="397" key="GridCell.Tab.0.bottom" timestamp="1601151636050">
+      <screen x="0" y="28" width="2560" height="1412" />
+    </state>
+    <state width="2506" height="397" key="GridCell.Tab.0.bottom/0.28.2560.1412@0.28.2560.1412" timestamp="1601151636050" />
+    <state width="2506" height="397" key="GridCell.Tab.0.center" timestamp="1601151636049">
+      <screen x="0" y="28" width="2560" height="1412" />
+    </state>
+    <state width="2506" height="397" key="GridCell.Tab.0.center/0.28.2560.1412@0.28.2560.1412" timestamp="1601151636049" />
+    <state width="2506" height="397" key="GridCell.Tab.0.left" timestamp="1601151636049">
+      <screen x="0" y="28" width="2560" height="1412" />
+    </state>
+    <state width="2506" height="397" key="GridCell.Tab.0.left/0.28.2560.1412@0.28.2560.1412" timestamp="1601151636048" />
+    <state width="2506" height="397" key="GridCell.Tab.0.right" timestamp="1601151636050">
+      <screen x="0" y="28" width="2560" height="1412" />
+    </state>
+    <state width="2506" height="397" key="GridCell.Tab.0.right/0.28.2560.1412@0.28.2560.1412" timestamp="1601151636050" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/daily_code_statistics$daily_code_statistics.coverage" NAME="daily-code-statistics Coverage Results" MODIFIED="1601150312531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/daily_code_statistics$Flask__manage_py_.coverage" NAME="Flask (manage.py) Coverage Results" MODIFIED="1601179512513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+>>>>>>> 4b605c14333b82a1e9876589dc185ce8864434fc
   </component>
 </project>
