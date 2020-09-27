@@ -1,0 +1,3 @@
+Flask==1.1.2
+PyMySQL==0.10.1
+DBUtils==2.0
