@@ -1,60 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin1" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin2" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5eb5d4f7-748c-4d73-9761-c7ad1803afe4" name="Default Changelist" comment="" />
+    <list default="true" id="05b929af-573c-43a4-b2ea-1db57dbf6370" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/daily-code-statistics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/daily-code-statistics.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/views/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/views/code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/views/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/views/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/home/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/home/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/home/layout.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Flask Main" />
-        <option value="HTML File" />
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
-  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
-    <envs>
-      <env key="FLASK_APP" value="app" />
-    </envs>
-    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
-    <option name="myEnvs">
-      <map>
-        <entry key="FLASK_APP" value="app" />
-      </map>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="a6d7ea6b-79bd-4475-9345-8c6bfb83055e" />
-  <component name="ProjectId" id="1i3VkCumJKXk5L9Q1OqLmEQwWRd" />
+  <component name="ProjectId" id="1i3xvIOgiiwu9mhNdYQuzdw6o1e" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/templates/home" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/templates/home" />
-      <recent name="$PROJECT_DIR$/app/scripts" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/static" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/home" />
-      <recent name="$PROJECT_DIR$/code_count" />
-    </key>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Flask server.Flask (manage.py)">
-    <configuration default="true" type="DjangoTestsConfigurationType">
+    <configuration name="daily-code-statistics" type="PythonConfigurationType" factoryName="Python">
       <module name="daily-code-statistics" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -67,53 +70,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <module name="daily-code-statistics" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <module name="daily-code-statistics" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="daily-code-statistics" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -122,15 +79,15 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Flask (manage.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+    <configuration name="Flask (manage.py)" type="Python.FlaskServer" nameIsGenerated="true">
       <option name="flaskDebug" value="true" />
       <module name="daily-code-statistics" />
-      <option name="target" value="$PROJECT_DIR$/../daily-code-statistics/manage.py" />
+      <option name="target" value="$PROJECT_DIR$/manage.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../daily-code-statistics" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -138,178 +95,63 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="Python.FlaskServer">
-      <module name="daily-code-statistics" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="code_count" type="Python.FlaskServer">
-      <option name="flaskDebug" value="true" />
-      <module name="daily-code-statistics" />
-      <option name="target" value="$PROJECT_DIR$/../daily-code-statistics/manage.py" />
-      <option name="targetType" value="PATH" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../venv/code_count/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../daily-code-statistics" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="daily-code-statistics" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Docutils task">
-      <module name="daily-code-statistics" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Sphinx task">
-      <module name="daily-code-statistics" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="daily-code-statistics" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="daily-code-statistics" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Flask server.code_count" />
       <item itemvalue="Flask server.Flask (manage.py)" />
+      <item itemvalue="Python.daily-code-statistics" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Flask server.Flask (manage.py)" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5eb5d4f7-748c-4d73-9761-c7ad1803afe4" name="Default Changelist" comment="" />
-      <created>1601136403055</created>
+      <changelist id="05b929af-573c-43a4-b2ea-1db57dbf6370" name="Default Changelist" comment="" />
+      <created>1601150305595</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1601136403055</updated>
-      <workItem from="1601136406301" duration="3510000" />
-      <workItem from="1601140088588" duration="8387000" />
+      <updated>1601150305595</updated>
+      <workItem from="1601150306751" duration="1230000" />
+      <workItem from="1601179498241" duration="3093000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="738" y="392" width="1084" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601144773227">
+    <state x="738" y="392" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601150356628">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="738" y="392" width="1084" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.2560.1412@0.28.2560.1412" timestamp="1601144773227" />
-    <state x="1118" y="463" width="313" height="542" key="EnvironmentVariablesDialog" timestamp="1601144736465">
+    <state x="738" y="392" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.2560.1412@0.28.2560.1412" timestamp="1601150356628" />
+    <state width="2506" height="397" key="GridCell.Tab.0.bottom" timestamp="1601151636050">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="1118" y="463" width="313" height="542" key="EnvironmentVariablesDialog/0.28.2560.1412@0.28.2560.1412" timestamp="1601144736465" />
-    <state x="624" y="576" width="424" height="485" key="FileChooserDialogImpl" timestamp="1601147613304">
+    <state width="2506" height="397" key="GridCell.Tab.0.bottom/0.28.2560.1412@0.28.2560.1412" timestamp="1601151636050" />
+    <state width="2506" height="397" key="GridCell.Tab.0.center" timestamp="1601151636049">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="624" y="576" width="424" height="485" key="FileChooserDialogImpl/0.28.2560.1412@0.28.2560.1412" timestamp="1601147613304" />
-    <state width="2506" height="447" key="GridCell.Tab.0.bottom" timestamp="1601148370207">
+    <state width="2506" height="397" key="GridCell.Tab.0.center/0.28.2560.1412@0.28.2560.1412" timestamp="1601151636049" />
+    <state width="2506" height="397" key="GridCell.Tab.0.left" timestamp="1601151636049">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="2506" height="447" key="GridCell.Tab.0.bottom/0.28.2560.1412@0.28.2560.1412" timestamp="1601148370207" />
-    <state width="2506" height="447" key="GridCell.Tab.0.center" timestamp="1601148370206">
+    <state width="2506" height="397" key="GridCell.Tab.0.left/0.28.2560.1412@0.28.2560.1412" timestamp="1601151636048" />
+    <state width="2506" height="397" key="GridCell.Tab.0.right" timestamp="1601151636050">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="2506" height="447" key="GridCell.Tab.0.center/0.28.2560.1412@0.28.2560.1412" timestamp="1601148370206" />
-    <state width="2506" height="447" key="GridCell.Tab.0.left" timestamp="1601148370206">
-      <screen x="0" y="28" width="2560" height="1412" />
-    </state>
-    <state width="2506" height="447" key="GridCell.Tab.0.left/0.28.2560.1412@0.28.2560.1412" timestamp="1601148370206" />
-    <state width="2506" height="447" key="GridCell.Tab.0.right" timestamp="1601148370207">
-      <screen x="0" y="28" width="2560" height="1412" />
-    </state>
-    <state width="2506" height="447" key="GridCell.Tab.0.right/0.28.2560.1412@0.28.2560.1412" timestamp="1601148370207" />
-    <state x="761" y="369" width="1037" height="731" key="SettingsEditor" timestamp="1601147623584">
-      <screen x="0" y="28" width="2560" height="1412" />
-    </state>
-    <state x="761" y="369" width="1037" height="731" key="SettingsEditor/0.28.2560.1412@0.28.2560.1412" timestamp="1601147623584" />
+    <state width="2506" height="397" key="GridCell.Tab.0.right/0.28.2560.1412@0.28.2560.1412" timestamp="1601151636050" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/code_count$Flask__app_py_.coverage" NAME="Flask (manage.py) Coverage Results" MODIFIED="1601140069684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/code_count$Flask__manage_py_.coverage" NAME="Flask (manage.py) Coverage Results" MODIFIED="1601148370188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../daily-code-statistics" />
-    <SUITE FILE_PATH="coverage/code_count$code_count.coverage" NAME="code_count Coverage Results" MODIFIED="1601144673897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/daily_code_statistics$daily_code_statistics.coverage" NAME="daily-code-statistics Coverage Results" MODIFIED="1601150312531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/daily_code_statistics$Flask__manage_py_.coverage" NAME="Flask (manage.py) Coverage Results" MODIFIED="1601179512513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
