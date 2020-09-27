@@ -22,8 +22,45 @@
 {% block content %}
     <div class="panel panel-default">
         {#        <div class="panel-heading">用户列表</div>#}
-        <div class="panel-heading"><a href="{{ url_for('home.user_list',page=1) }}">用户列表</a> >> 代码提交记录</div>
+        <div class="panel-heading"><a href="{{ url_for('home.user_list',page=1) }}">用户列表</a> >> 代码提交记录(最近5天)</div>
         <div class="panel-body">
+            {% if record_list %}
+                <div class="col-md-4">
+                    <div id="container_smoothed_line" style="height: 300px"></div>
+                    <div class="text-center">平滑折线图</div>
+                </div>
+                <div class="col-md-4">
+                    <div id="container" style="height: 268px"></div>
+                    <div class="text-center" style="margin-top: 32px">柱状图</div>
+                </div>
+                <div class="col-md-4">
+                    <div id="container_line" style="height: 300px"></div>
+                    <div class="text-center">折线图</div>
+                </div>
+                <div class="col-md-12">
+                    <hr>
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>行数</th>
+                            <th>日期</th>
+                        </tr>
+                        </thead>
+                        {% for row in record_list %}
+                            <tr>
+                                <td style="vertical-align: middle">{{ row.id }}</td>
+                                <td style="vertical-align: middle">{{ row.line }}</td>
+                                <td style="vertical-align: middle">{{ row.ctime }}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                    <div class="text-center">代码提交记录统计表</div>
+                </div>
+            {% else %}
+                提交您的代码后才可以看到提交记录！
+            {% endif %}
+
         </div>
     </div>
 {% endblock %}
@@ -32,5 +69,103 @@
         $(document).ready(function () {
             $("#m1").addClass("active");
         });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/bmap.min.js"></script>
+    <script>
+        var dom = document.getElementById("container");
+        var myChart = echarts.init(dom);
+        var app = {};
+        option = null;
+        app.title = '坐标轴刻度与标签对齐';
+        option = {
+            color: ['#d8534f'],
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                    type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                }
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis: [
+                {
+                    type: 'category',
+                    // data: {{data_list}},
+                    data: {{time_list}},
+                    axisTick: {
+                        alignWithLabel: true
+                    }
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'value'
+                }
+            ],
+            series: [{
+                name: '行数',
+                type: 'bar',
+                barWidth: '60%',
+                data: {{data_list}}
+            }]
+        }
+        if (option && typeof option === "object") {
+            myChart.setOption(option, true);
+        }
+    </script>
+    <script>
+        var dom = document.getElementById("container_line");
+        var myChart = echarts.init(dom);
+        var app = {};
+        option = null;
+        option = {
+            xAxis: {
+                type: 'category',
+                data: {{time_list}}
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [{
+                data: {{data_list}},
+                type: 'line'
+            }]
+        };
+        if (option && typeof option === "object") {
+            myChart.setOption(option, true);
+        }
+    </script>
+    <script>
+        var dom = document.getElementById("container_smoothed_line");
+        var myChart = echarts.init(dom);
+        var app = {};
+        option = null;
+        option = {
+            xAxis: {
+                type: 'category',
+                data: {{time_list}}
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [{
+                data: {{data_list}},
+                type: 'line',
+                smooth: true
+            }]
+        };
+        if (option && typeof option === "object") {
+            myChart.setOption(option, true);
+        }
     </script>
 {% endblock %}

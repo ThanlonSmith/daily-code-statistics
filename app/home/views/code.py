@@ -103,7 +103,28 @@ def code_upload():
     return render_template('home/upload_code.html')
 
 
-@home.route('/record/<int:id>/')
-def commit_record(id=None):
-
-    return render_template('home/commit_record.html')
+@home.route('/record/<int:id>/<int:page>/')
+def commit_record(id=None, page=None):
+    print(session)
+    """
+    <SecureCookieSession {'user_info': {'id': 1, 'nickname': 'thanlon', 'pwd': 'ea48576f30be1669971699c09ad05c94', 'user': 'thanlon'}}>
+    """
+    print(session['user_info'])
+    """
+    {'id': 1, 'nickname': 'thanlon', 'pwd': 'ea48576f30be1669971699c09ad05c94', 'user': 'thanlon'}
+    """
+    print(session['user_info'].get('id', None))  # 通过页码传用户的id和直接从session获取一样
+    record_list = db_helper.fetch_all(
+        'select id,line,ctime from record  where user_id = %s order by ctime asc limit 0,5', (id,))
+    print(record_list)
+    data_list, time_list = list(), list()
+    for row in record_list:
+        data_list.append(row['line'])
+        time_list.append(float(row['ctime'].strftime("%m.%d")))  # datetime类型转换成字符串
+    print(data_list)
+    print(time_list)
+    """
+    [135, 897, 1032, 374, 678]
+    [9.26, 9.25, 9.27, 9.24, 9.23]
+    """
+    return render_template('home/commit_record.html', data_list=data_list, time_list=time_list, record_list=record_list)

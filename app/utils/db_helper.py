@@ -7,7 +7,7 @@ def fetchone(sql, args):
     获取单条数据
     :param sql: 执行的sql语句
     :param args: 其它参数
-    :return:
+    :return:没有值返回空元组
     '''
     conn = Config.POOL.connection()
     cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
@@ -23,7 +23,7 @@ def fetch_all(sql, args):
     获取所有数据
     :param sql: 执行的sql语句
     :param args: 其它参数
-    :return:
+    :return:没有值返回空元组
     '''
     conn = Config.POOL.connection()
     # cursor = conn.cursor()  # ((1, 'thanlon', 'thanlon'), (2, 'kiku', 'kiku'))

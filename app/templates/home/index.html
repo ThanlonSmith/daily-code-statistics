@@ -40,7 +40,7 @@
                         <td style="vertical-align: middle">{{ row.user }}</td>
                         <td style="vertical-align: middle">{{ row.nickname }}</td>
                         <td class="text-center">
-                            <a href="{{ url_for('home.commit_record',id=row['id']) }}">查看</a>
+                            <a href="{{ url_for('home.commit_record',id=row['id'],page=1) }}">查看</a>
                         </td>
                     </tr>
                 {% endfor %}
