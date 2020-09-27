@@ -1,3 +1,4 @@
+from .decoration import login_wrapper
 from .. import home
 from flask import redirect, render_template, url_for, request, flash, session
 from app.utils import md5
@@ -10,6 +11,7 @@ def index():
 
 
 @home.route('/user/list/<int:page>/', methods=["GET"])
+@login_wrapper
 def user_list(page=None):
     if request.method == 'GET':
         per_page = 2  # 每页显示多少条
@@ -55,7 +57,9 @@ def user_login():
     return render_template('home/login.html')
 
 
+# 退出加装饰器可以不用执行退出逻辑代码，直接退出到登录页面
 @home.route('/user/logout/')
+@login_wrapper
 def user_logout():
     print(session, type(session))
     if session.get('user_info'):

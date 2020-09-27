@@ -1,3 +1,4 @@
+from .decoration import login_wrapper
 import datetime
 import os
 import uuid
@@ -54,6 +55,7 @@ def get_code_line(target_path):
 
 
 @home.route('/code/upload/', methods=['POST', 'GET'])
+@login_wrapper
 def code_upload():
     if request.method == "POST":
         if check_upload():
@@ -104,6 +106,7 @@ def code_upload():
 
 
 @home.route('/record/<int:id>/<int:page>/')
+@login_wrapper
 def commit_record(id=None, page=None):
     print(session)
     """
